@@ -29,3 +29,24 @@ function calculateRectangleArea() {
   const areaSpan = document.getElementById("rectangle-area");
   areaSpan.innerText = area;
 }
+
+function calculateParallelogramArea() {
+  const base = getInputValue("parallelogram-base");
+  const height = getInputValue("parallelogram-height");
+
+  const area = base * height;
+
+  setElementInnerText("parallelogram-area", area);
+}
+
+function getInputValue(fieldId) {
+  const inputField = document.getElementById(fieldId);
+  const value = parseFloat(inputField.value);
+
+  return value;
+}
+
+function setElementInnerText(elementId, area) {
+  const element = document.getElementById(elementId);
+  element.innerText = area;
+}
