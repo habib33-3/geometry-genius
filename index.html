@@ -15,10 +15,57 @@
   </head>
   <body>
     <header></header>
-    <main></main>
+    <main>
+      <!-- Main Container Starts -->
+      <div class="flex flex-col lg:flex-row">
+        <!-- Shape Container Starts -->
+        <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Triangle Starts -->
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure>
+              <img src="/images/triangle.png" alt="Triangle" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Triangle!</h2>
+              <p>Area (A) = 0.5 X b X h</p>
+              <p>
+                <input
+                  type="number"
+                  name=""
+                  id=""
+                  class="border w-24 px-2 text-xl bg-gray-200"
+                  placeholder="base"
+                />
+                <span class="ml-2">cm</span>
+                <input
+                  type="number"
+                  name=""
+                  id=""
+                  class="border w-24 px-2 text-xl bg-gray-200"
+                  placeholder="height"
+                />
+                <span class="ml-2">cm</span>
+              </p>
+              <p>Area: <span></span></p>
+              <div class="card-actions">
+                <button class="btn btn-primary w-full">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <!-- Triangle ends -->
+        </div>
+        <!-- Shape Container ends -->
+
+        <!-- Area Calculator Starts -->
+        <div class="w-[400px]">
+          <div class="text-4xl">Area Calculator</div>
+        </div>
+        <!-- Area Calculator ends -->
+      </div>
+      <!-- Main Container ends -->
+    </main>
     <footer></footer>
 
-    
-    <script src="js/main.js"></script>
+    <script src="js/area-calculator.js"></script>
   </body>
 </html>
